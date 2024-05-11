@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+.container-fluid{
+    background-color: #f9faff;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.header-top{
+    display: flex; 
+    height: 50px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #133046;
+    .header-top-dir{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        color: #ffffffad;
+        i{
+            color: #0b79ce;
+        }
+        p{
+          margin: 0;  
+        }
+    }
+    .header-top-right{
+        i{
+            color: #fff;
+            background-color: #5a86f3;
+            padding: 17px;
+        }
+    }
+}
+.header-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 11vw;
+    .header-bottom-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-weight: 900;
+            font-size: 27px;
+            margin: 0;
+            span{
+                color: #607dc4;
+            }
+        }
+        h6{
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            font-size: 11px;
+            color: #a6a6a6;
+        }
+    }
+    .header-bottom-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            padding: 1.7rem 25px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 300;
+        }
+        a:hover{
+            color: #0b79ce;
+            font-weight: 500;
+        }
+    }
+    
+}
+.carousel{
+    position: relative;
+    .carousel-caption{
+        background-color: #0034526e;
+        padding: 0;
+        height: 908px;
+        margin-bottom: -20px;
+        width: 1920px;  
+        margin-left: -285px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h5{
+            font-size: 60px;
+            width: 700px;
+            font-weight: 400;
+        }
+        p{
+            width: 641px;
+            font-size: 16px ;
+        }
+        button{
+            border: none;
+            height: 55px;
+            width: 170px;
+            color: #0b79ce;
+            border-radius: 5px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+    }
+}
+
+.whyus{
+    margin: 100px 0;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    .whyus-main{
+        display: grid;
+        grid-template-columns: auto auto;
+        .whyus-main-item{
+            display: flex;
+            background-color: #fff;
+            flex-direction: column;
+            margin-bottom: 20px;
+            gap: 30px;
+            width: 255px;
+            height: 354px;
+            margin-left: 30px;
+            padding: 35px;
+            i{
+                font-size: 27px;
+            }
+            h2{
+                width: 175px;
+                font-size: 20px;
+            }
+            p{
+                width: 175px;
+
+            }      
+        }
+    }
+    .whyus-user{
+        display: flex;
+        flex-direction: column;
+        width: 534px;
+        font-weight: 600; 
+        .whyus-user-main{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }  
+        h5{
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.3);;
+        }
+        p{
+            color: rgba(0, 0, 0, 0.432);;
+        }
+        button{
+            width: 150px;
+            height: 45px;
+            background-color: #0b79ce;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: none;
+            color: #fff;
+        }
+        button:hover{
+            background-color: #fff;
+            color: #0b79ce;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+
+@media (max-width: 576px) { 
+    .header-top{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        height: 100px;
+    }
+    .header-top-right{
+        i{
+            padding: 7px !important;
+        }
+    }
+    .carousel-caption-text{
+        display: none !important;
+    }
+    .carousel-caption{
+        a{
+            display: none;
+        }
+    }
+    .header-bottom{
+        flex-direction: column;
+        .header-bottom-nav{
+            a{
+                padding: 15px;
+            }
+            a:hover{
+                color: #0b79ce;
+                font-weight: 500;
+            }
+        }
+    }
+    .whyus{
+        margin-left: -12px;
+        flex-direction: column;
+        .whyus-user{
+           width: 500px;
+        }
+    }
+}
+
+@media (max-width: 768px) { 
+    .header-top{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        height: 100px;
+    }
+    .header-top-right{
+        i{
+            padding: 7px !important;
+        }
+    }
+    .carousel-caption-text{
+        display: none !important;
+    }
+    .carousel-caption{
+        a{
+            display: none;
+        }
+    }
+    .header-bottom{
+        flex-direction: column;
+        .header-bottom-nav{
+            a{
+                padding: 15px;
+            }
+            a:hover{
+                color: #0b79ce;
+                font-weight: 500;
+            }
+        }
+    }
+    .whyus{
+        margin-left: -12px;
+        flex-direction: column;
+        .whyus-user{
+           width: 500px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .carousel-caption{
+        width: 768px;   
+        display: block;git init
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 1200px) { 
+
+
+    .whyus{
+        margin-left: -12px;
+        flex-direction: column;
+        .whyus-user{
+           width: 500px;
+        }
+    } 
+
+}
+
+
+
