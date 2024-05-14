@@ -140,6 +140,11 @@
             height: 354px;
             margin-left: 30px;
             padding: 35px;
+        .whyus-main-item:hover{
+            background-color: #0b79ce;
+            color: #fff;
+            transition: all .3s ease-in-out;
+        }
             i{
                 font-size: 27px;
             }
@@ -272,7 +277,7 @@
 @media (max-width: 768px){
     .carousel-caption{
         width: 768px;   
-        display: block;git init
+        display: block;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -290,6 +295,3 @@
     } 
 
 }
-
-
-
