@@ -140,10 +140,11 @@
             height: 354px;
             margin-left: 30px;
             padding: 35px;
+        }
         .whyus-main-item:hover{
             background-color: #0b79ce;
             color: #fff;
-            transition: all .3s ease-in-out;
+            transition: all .4s ease-in-out;
         }
             i{
                 font-size: 27px;
@@ -229,11 +230,16 @@
         margin-left: -12px;
         flex-direction: column;
         .whyus-user{
-           width: 500px;
+            width: 500px;
         }
     }
 }
-
+@media (max-width: 576px) {
+    .whyus-main{
+        grid-template-columns: auto !important;
+        grid-template-rows: auto auto auto auto;
+    }    
+}
 @media (max-width: 768px) { 
     .header-top{
         flex-direction: column;
@@ -294,4 +300,4 @@
         }
     } 
 
-}
+}   
